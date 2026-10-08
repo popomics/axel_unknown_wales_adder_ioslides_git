@@ -1,0 +1,149 @@
+/* Custom Style for ioslides Presentation */
+
+/* getting the fonts correctly for gh pages */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,400&family=Roboto:ital,wght@0,100..900;1,400&display=swap');
+
+/*slides>slide.title-slide {
+    background-image: url('../img/adder_outline.png');
+    background-size: 40%; /* Resize the image */
+/*    background-position: calc(100% - 5%) calc(0% + 5%); /* Position it at the top-right corner */
+/*    background-repeat: no-repeat; /* Prevent repeating the image */
+/*}*/
+
+slides>slide.title-slide h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #282A36; /* title slide heading colour */
+}
+
+slides>slide.title-slide h2 {
+    color: #6272A4; /* title slide subheading colour */
+}
+
+slides > slide.title-slide p {
+  color: #44475A; /* title slide author & email colour*/
+  font-size: 18pt; /* title slide author & email font size*/
+}
+
+p.caption {
+  font-size: 0.6em !important
+}
+
+/* this is the grey bar that the title logo sits in*/
+aside.gdbar {
+  height: 100px;
+  width: 340px;
+  position: absolute;
+  left: -1px;
+  top: 125px;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #282A36), color-stop(100%, #282A36)) no-repeat;
+  background: -webkit-linear-gradient(left, #282A36, #282A36) no-repeat;
+  background: -moz-linear-gradient(left, #282A36, #282A36) no-repeat;
+  background: -o-linear-gradient(left, #282A36, #282A36) no-repeat;
+  background: -ms-linear-gradient(left, #282A36, #282A36) no-repeat;
+  background: linear-gradient(left, #282A36, #282A36) no-repeat;
+  -webkit-background-size: 0% 100%;
+  -moz-background-size: 0% 100%;
+  -o-background-size: 0% 100%;
+  background-size: 0% 100%;
+  -webkit-transition: all 0.5s ease-out 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  -ms-transition: all 0.5s ease-out 0.5s;
+  -o-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
+  /* Better to transition only on background-size, but not sure how to do that with the mixin. */
+}
+
+/* this is the size of the small logo image */
+aside.gdbar img {
+  height: 85px !important;
+  width: 300px !important;
+  position: absolute;
+  right: 0;
+  margin: 8px 15px;
+}
+
+slides > slide:not(.nobackground)::before {
+  font-size: 12pt;
+  content: ""; /* Empty content is fine if you're only using the background */
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  background: url('../img/A1_FullColour.svg') no-repeat center center; /* Replace with actual image URL */
+  background-size: 70px 70px; /* Set the size of the background image */
+  -webkit-background-size: 70px 70px;
+  -moz-background-size: 70px 70px;
+  -o-background-size: 70px 70px;
+  padding-left: 0px; /* Adjust if necessary for spacing */
+  height: 70px;
+  width: 70px;
+  line-height: 1.9;
+}
+
+ /* Custom slide background color */
+.white-slide {
+  background: none !important;
+  background-color: white !important;
+  margin-left: -60px;
+  padding-left: 60px;
+  margin-right: -60px;
+  padding-right: 60px;
+  margin-bottom: -60px;
+  padding-bottom: 60px;
+}
+
+slides>slide.dark {
+    background: #282A36 !important;
+}
+
+slides>slide.dark h2 {
+    color: #F1FA8C !important;
+}
+
+slides > slide {
+  color: #44475A; /* normal slide font colour */
+}
+
+/* Set the color and font size for slide titles 2c3e50 */
+h2 {
+  color: #282A36;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.2em;
+  margin-bottom: -10px
+}
+
+h3 {
+    color: #6272A4; /* normal slide subheading colour */
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+
+p, li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+ul li {
+    margin-bottom: 20px; /* Adjust the space between each list item */
+}
+
+ol li {
+    margin-bottom: 20px; /* Adjust the space between each list item for ordered lists */
+}
+
+
+/* For flex column layout */
+.flex-cols {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 2rem; /* Space between the columns */
+}
